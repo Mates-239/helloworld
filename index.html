@@ -23,5 +23,13 @@
 </head>
 <body>
   <h1>Hello, World!</h1>
+  <p id="date" style="color:#fff; font-size:1.5rem; margin-top:1rem;"></p>
+  <script>
+    function update() {
+      document.getElementById("date").textContent = new Date().toDateString();
+    }
+    update();
+    setInterval(update, 1000);
+  </script>
 </body>
 </html>
